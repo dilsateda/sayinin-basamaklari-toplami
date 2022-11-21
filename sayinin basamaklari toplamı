@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("sayı giriniz:");
+        int number = inp.nextInt();
+        int basNumber=0;
+        int tempNumber =number;
+        int basValue;
+        int basSum = 0;
+
+        while (tempNumber !=0) {
+            tempNumber /= 10;
+            basNumber++;
+        }
+
+        tempNumber = number;
+        while (tempNumber != 0) {
+            basValue =tempNumber % 10;
+            basSum += basValue;
+            tempNumber /= 10;
+        }
+
+
+        System.out.println(number+" sayının basamakları toplamı= "+basSum);
+
+
+    }
+}
