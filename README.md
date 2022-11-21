@@ -1,0 +1,1 @@
+# sayinin-basamaklari-toplami
